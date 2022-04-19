@@ -4,7 +4,6 @@ import { Form, useActionData } from "@remix-run/react";
 import * as React from "react";
 
 import { createNote } from "~/models/note.server";
-import { requireUserId } from "~/session.server";
 
 type ActionData = {
   errors?: {
@@ -14,8 +13,6 @@ type ActionData = {
 };
 
 export const action: ActionFunction = async ({ request }) => {
-  const userId = await requireUserId(request);
-
   const formData = await request.formData();
   const title = formData.get("title");
   const body = formData.get("body");
@@ -34,7 +31,7 @@ export const action: ActionFunction = async ({ request }) => {
     );
   }
 
-  const note = await createNote({ title, body, userId });
+  const note = await createNote({ title, body });
 
   return redirect(`/notes/${note.id}`);
 };
