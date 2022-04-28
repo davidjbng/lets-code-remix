@@ -28,22 +28,32 @@
 
 ## Coding Examples
 
-- [Conventions](https://remix.run/docs/en/v1/api/conventions)
+- [Remix-Stacks](https://remix.run/docs/en/v1/pages/stacks)
+  - Siehe [README.md](../README.md)
+- [Conventions](https://remix.run/docs/en/v1/api/conventions#file-name-conventions)
+  - [entry.server.tsx](../app/entry.server.tsx) / [entry.client.tsx](../app/entry.client.tsx)
+  - [root.tsx](../app/root.tsx)
 - [File-Based Routing](https://remix.run/docs/en/v1/guides/routing)
   - https://remix.run/docs/en/v1/guides/routing#defining-routes
 - [Route Module](https://remix.run/docs/en/v1/api/conventions#route-module-api)
   - default export
-  - loader
-  - action
-  - headers, meta, links
+    - _/settings_
+  - `loader`
+    - Läuft nur serverseitig, kommt nicht ins Browser bundle
+    - Beispiel: load settings from db (accent-color)
+  - meta, links, headers
   - CatchBoundary
   - ErrorBoundary
+- [Module Constraints](https://remix.run/docs/en/v1/guides/constraints#no-module-side-effects)
+  - No side effects: `console.log(prisma)`
 - [Forms](https://remix.run/docs/en/v1/guides/data-writes)
   - Basic Html Form
-  - Form Validation
+    - form mit text input input
+    - `action`
+      - save settings
+  - [Form Validation](https://remix.run/docs/en/v1/guides/data-writes#form-validation)
+    - kein Javascript
   - `<Form/>` mit pending UI
-- [Remix-Stacks](https://remix.run/docs/en/v1/pages/stacks)
-  - Siehe [README.md](../README.md)
 - [Prisma](https://www.prisma.io/docs/concepts/components/prisma-schema#example)
   - [Schema File](../prisma/schema.prisma)
   - [Seed File](../prisma/seed.ts)
