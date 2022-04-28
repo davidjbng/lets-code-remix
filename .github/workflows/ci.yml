@@ -4,6 +4,8 @@ on:
     branches:
       - main
       - dev
+    paths-ignore:
+      - "**.md"
   pull_request: {}
 
 concurrency: ci-${{ github.ref }}
