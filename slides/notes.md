@@ -12,14 +12,14 @@
   - Alle Daten für Route bekannt
   - Einfaches Prefetching
 
-### https://remix.run/docs/en/v1/pages/technical-explanation
+### [Technical Explanation](https://remix.run/docs/en/v1/pages/technical-explanation)
 
 - "react-router on steroids"
 - Vergleich Vite
   - Benutzen beide esbuild
-- Vergleich NextJS (SvelteKit)
+- [Vergleich NextJS](https://remix.run/blog/remix-vs-next)
 
-### https://remix.run/docs/en/v1/pages/philosophy
+### [Philosophy](https://remix.run/docs/en/v1/pages/philosophy)
 
 - Entwickler von React Router und KCD
 - "You can make your server fast, but you can't control the user's network."
@@ -28,11 +28,22 @@
 
 ## Coding Examples
 
-- File-Based Routing https://remix.run/docs/en/v1/guides/routing
-- Conventions https://remix.run/docs/en/v1/api/conventions
-- Route Module https://remix.run/docs/en/v1/api/conventions#route-module-api
-- Remix-Stacks https://remix.run/docs/en/v1/pages/stacks
-- Prisma zeigen
+- [Conventions](https://remix.run/docs/en/v1/api/conventions)
+- [File-Based Routing](https://remix.run/docs/en/v1/guides/routing)
+  - https://remix.run/docs/en/v1/guides/routing#defining-routes
+- [Route Module](https://remix.run/docs/en/v1/api/conventions#route-module-api)
+  - default export
+  - loader
+  - action
+  - headers, meta, links
+  - CatchBoundary
+  - ErrorBoundary
+- [Remix-Stacks](https://remix.run/docs/en/v1/pages/stacks)
+  - Siehe [README.md](../README.md)
+- [Prisma](https://www.prisma.io/docs/concepts/components/prisma-schema#example)
+  - [Schema File](../prisma/schema.prisma)
+  - [Seed File](../prisma/seed.ts)
+  - `npm run setup` nach Schema Änderungen
 
 ### Repo-Setup
 
@@ -43,3 +54,5 @@
 - `npm run dev`
 
 ## Aufgaben
+
+[TASKS.md](../TASKS.md)
