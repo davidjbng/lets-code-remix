@@ -13,7 +13,12 @@
 5. DB Migration ausführen mit `npm run setup`
 6. Zeige eine Liste aller Projekte an (siehe: [Data Loading](https://remix.run/docs/en/v1/guides/data-loading))
 
-## Create Projects
+## Project View
+
+1. Neue Seite _/projects/$id_
+2. Project aus der Liste Verlinken
+
+## Create Project
 
 1. Neue Seite _/projects/new_
 2. Link unter _/projects_ hinzufügen
@@ -28,7 +33,8 @@
    2. Start-Datum: >= heute
    3. Tags: mind. 1
 
-## Link Notes -> Project
+## Link Notes -> Projects / Tags
 
 1. Prisma Schema anpassen: Jede Note kann einem Projekt zugeordnet werden
 2. Project Auswahl (select) in _notes/new_ hinzufügen
+3. Liste aller Notes eines Project unter _project/$id_ anzeigen
