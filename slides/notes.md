@@ -52,7 +52,7 @@
 ### Repo-Setup
 
 - git clone https://github.com/davidjbng/lets-code-remix.git
-- gh repo fork --clone davidjbng/lets-code-remix
+- gh repo fork --clone davidjbng/lets-code-remix (Github Actions 🎉)
 - `npm i`
 - `npm run setup`
 - `npm run dev`
