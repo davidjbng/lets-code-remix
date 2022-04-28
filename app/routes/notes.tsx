@@ -3,7 +3,7 @@ import { json } from "@remix-run/node";
 import { Outlet, useLoaderData } from "@remix-run/react";
 
 import { getNoteListItems } from "~/models/note.server";
-import { PendingLink, PendingNavLink } from "~/pending-link";
+import { PendingLink, PendingNavLink } from "~/components/pending-link";
 
 type LoaderData = {
   noteListItems: Awaited<ReturnType<typeof getNoteListItems>>;
